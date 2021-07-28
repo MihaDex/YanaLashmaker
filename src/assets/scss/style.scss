@@ -1,5 +1,23 @@
-body {
-    background-color: black;
-    font-size: 21px;
-    color: white;
+@import "./vendor/reset.scss";
+@import "vars";
+
+html {
+    font-size: 62.5%;
 }
+body {
+    font-size: 1.6rem;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+.top {
+    flex-grow: 1;
+    height: 100vh;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@import "./blocks/header.scss";
