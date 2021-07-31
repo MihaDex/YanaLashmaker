@@ -1,16 +1,17 @@
 <header class="header">
     <div class="container">
-        <navbar class="navbar">
-            <div class="navbar__logo">
-                <a href="tel:+79151489490">+79151489490</a>
+        {{> navbar }}
+        <div class="row">
+            <section class="offer">
+                <h2 class="offer__title">Ваши ресницы - моя гордость!</h2>
+                <p class="offer__text">Меня зовут Яна, я мастер по ресницам!</p>
+                <button class="offer__button">записаться</button>
+            </section>
+            <div class="main-logo">
+                <img class="main-logo__image" src="/assets/images/main-logo.png" alt="main-logo">
+                <h2 class="main-logo__title">Yana Lashmaker</h2>
             </div>
-            <div class="navigation">
-                <a class="navigation__link navigation__link--active" href="#">Главная</a>
-                <a class="navigation__link" href="#">Работы</a>
-                <a class="navigation__link" href="#">Цены</a>
-                <a class="navigation__link" href="#">Контакты</a>
-                <a class="navigation__link" href="#">Записаться</a>
-            </div>
-        </navbar>
+        </div>
+        
     </div>
 </header>

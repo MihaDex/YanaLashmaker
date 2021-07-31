@@ -1,6 +1,6 @@
 .header{
     height: 100vh;
-    background-image: url("../images/background.png");
+    background-image: url("/assets/images/background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -11,22 +11,71 @@
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
-    &__logo a {
+    &__logo{
+        position: relative;
         color: black;
         text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
+        font-size: 1.6rem;
+        padding-left: 20px;
+    }
+    &__logo::before{
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        left: -1px;
+        background-image: url("/assets/images/phone-icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
 }
 
-.navigation {
-    display: flex;
+@import "./navbar.scss";
 
-    &__link {
-        margin-left: 25px;
-        color: black;
-        text-decoration: none;
-    }
-    &__link--active{
+.offer {
+    margin-top: 30vh;
+    &__title {
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
+        font-size: 32px;
+    }
+    &__text {
+        margin-top: 50px;
+        font-weight: bold;
+    }
+    &__button {
+        margin-top: 50px;
+        height: 60px;
+        width: 300px;
+        background: linear-gradient(94.23deg, rgba(129, 255, 239, 0.58) 25.06%, rgba(240, 103, 180, 0.77) 75.79%);
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &__button:hover {
+        background: linear-gradient(94.23deg, rgba(129, 255, 239, 0.58) 25.06%, rgba(240, 103, 180, 0.77) 75.79%);
+        box-shadow: inset -5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.main-logo {
+    margin-top: 20vh;
+    margin-right: 130px;
+
+    &__image {
+        width: 345px;
+        height: 240px;
+    }
+    &__title {
+        margin-top: 20px;
+        font-family: 'Lobster', cursive;
+        font-size: 48px;
+        line-height: 60px;
     }
 }

@@ -1,11 +1,14 @@
 @import "./vendor/reset.scss";
 @import "vars";
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
 html {
     font-size: 62.5%;
 }
 body {
     font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
 }
 .wrap {
     display: flex;
@@ -18,6 +21,11 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1200px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 @import "./blocks/header.scss";
